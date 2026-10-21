@@ -1,2 +1,3 @@
 # Arabic-alphabet
 An app for learning the Arabic alphabet: letters, their four forms, pronunciation by the device's speech engine, handwriting practice and tests. Designed for children aged about 4-8 together with an adult, and for adult beginners. 
+Privacy policy and End User Licence Agreement for M31 Edu Arabic Alphabet (ch.m31.edu.arabic). Published by Neuron M31 (Andrzej Węgrzyn). Hosted via GitHub Pages and linked from the store listings (Google Play, App Store). The privacy policy (index.html, also available as Privacy-Policy.html) and the EULA (eula.html) are available in English, Polish and Arabic.
