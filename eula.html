@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End User Licence Agreement — M31 Edu Arabic Alphabet</title>
+<style>
+  :root {
+    --navy:    #0E2A2B;
+    --slate:   #173B3C;
+    --paper:   #F7F5EF;
+    --ink:     #16202E;
+    --muted:   #5A6675;
+    --amber:   #E9B949;
+    --rule:    #D8D3C6;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.4rem; }
+
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 2.6rem 0 2.1rem;
+    border-bottom: 3px solid var(--amber);
+  }
+  .kicker {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 0.7rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header p.sub { margin: 0.7rem 0 0; color: #A9BDB9; font-size: 0.95rem; }
+
+  dl.meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.15rem 1.2rem;
+    margin: 1.5rem 0 0;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+  }
+  dl.meta dt { color: #86A09C; }
+  dl.meta dd { margin: 0; color: #E8ECEB; }
+
+  nav.langs { background: var(--slate); padding: 0.85rem 0; }
+  nav.langs .wrap { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  nav.langs a {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: #CFDAD8;
+    text-decoration: none;
+    padding: 0.32rem 0.7rem;
+    border: 1px solid #3A5859;
+    border-radius: 3px;
+  }
+  nav.langs a:hover, nav.langs a:focus-visible { color: var(--navy); background: var(--amber); border-color: var(--amber); }
+
+  main { padding: 2.6rem 0 4rem; }
+  section.lang { padding-top: 1rem; }
+  section.lang + section.lang { margin-top: 3.4rem; border-top: 1px solid var(--rule); padding-top: 2.6rem; }
+
+  h2 {
+    font-size: 1.35rem;
+    margin: 0 0 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--navy);
+    letter-spacing: -0.01em;
+  }
+  h3 { font-size: 1.02rem; margin: 2.1rem 0 0.5rem; letter-spacing: 0.01em; }
+  h3 .num {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #A8780F;
+    font-size: 0.82rem;
+    margin-right: 0.5rem;
+  }
+  p { margin: 0.7rem 0; }
+  ul { margin: 0.7rem 0; padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  strong { font-weight: 650; }
+
+  .core {
+    background: #fff;
+    border-left: 4px solid var(--amber);
+    padding: 1.15rem 1.3rem;
+    margin: 1.4rem 0;
+    box-shadow: 0 1px 2px rgba(14,42,43,0.06);
+  }
+  .core p { margin: 0; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.86em;
+    background: #ECE8DE;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+  a { color: #1F6FB2; }
+
+  /* Arabski: od prawej do lewej */
+  section[dir="rtl"] {
+    font-family: "Noto Naskh Arabic", "Geeza Pro", "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  section[dir="rtl"] h2, section[dir="rtl"] h3 { letter-spacing: 0; }
+  section[dir="rtl"] .core { border-left: 0; border-right: 4px solid var(--amber); }
+  section[dir="rtl"] h3 .num { margin-right: 0; margin-left: 0.5rem; }
+  section[dir="rtl"] ul { padding-left: 0; padding-right: 1.3rem; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 1.8rem 0 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Neuron M31</p>
+    <h1>End User Licence Agreement<br>M31 Edu Arabic Alphabet</h1>
+    <p class="sub">Umowa licencyjna użytkownika końcowego · <span lang="ar" dir="rtl">اتفاقية ترخيص المستخدم النهائي</span></p>
+    <dl class="meta">
+      <dt>Application</dt><dd>M31 Edu Arabic Alphabet (ch.m31.edu.arabic)</dd>
+      <dt>Licensor</dt><dd>Andrzej Węgrzyn (Neuron M31)</dd>
+      <dt>Contact</dt><dd>neuron.m31@gmail.com</dd>
+      <dt>Valid from</dt><dd>2026-10-21</dd>
+    </dl>
+  </div>
+</header>
+
+<nav class="langs">
+  <div class="wrap">
+    <a href="#en">ENGLISH</a>
+    <a href="#pl">POLSKI</a>
+    <a href="#ar" lang="ar">العربية</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ══════════════════ ENGLISH ══════════════════ -->
+<section class="lang" id="en" lang="en">
+  <h2>End User Licence Agreement</h2>
+
+  <div class="core">
+    <p><strong>This application is licensed to you, not sold.</strong> By installing or using it you accept the terms below. If you do not accept them, do not install or use the application. If the application is used by a child, these terms are accepted by the parent or legal guardian.</p>
+  </div>
+
+  <h3><span class="num">01</span>Grant of licence</h3>
+  <p>The Licensor grants you a personal, non-exclusive, non-transferable and revocable licence to install and use the application on devices you own or control, for your own or your family’s learning.</p>
+  <p>This licence does not transfer ownership of the application or of any part of it. All rights not expressly granted here remain with the Licensor.</p>
+
+  <h3><span class="num">02</span>What you may not do</h3>
+  <ul>
+    <li>copy, distribute, rent, lease, lend, sell or sublicense the application,</li>
+    <li>modify, adapt, translate or create derivative works based on it,</li>
+    <li>reverse engineer, decompile or disassemble it, or attempt to derive its source code, except to the extent such restriction is prohibited by applicable law,</li>
+    <li>remove or alter any copyright, trademark or other proprietary notices,</li>
+    <li>circumvent, disable or interfere with the licensing, access-control, parental-gate or payment mechanisms of the application.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Intellectual property</h3>
+  <p>The application, its source code, design, graphics, texts and all related materials are protected by copyright and remain the exclusive property of the Licensor. The lesson structure and progression, the letter grid, the tutorial, the tests and their tasks, and the method of checking handwriting are the property of the Author, and any use of them in other products without the Author’s consent is prohibited.</p>
+  <p>The Arabic alphabet itself is part of the common cultural heritage and is not claimed by the Licensor. Letters are displayed with the fonts and the text-to-speech engine of your device, which belong to their respective owners.</p>
+  <p>Copyright © 2026 Andrzej Węgrzyn. All rights reserved.</p>
+
+  <h3><span class="num">04</span>Paid features and purchases</h3>
+  <p>The application is free to install. The first lessons are open to everyone and further lessons open as the learner passes the previous ones. Premium — a one-time purchase made through Google Play or the App Store — opens all lessons at once; a letter is still marked as passed only when the learner passes it. Purchases, cancellations and refunds are handled by the store under its own terms of service; the Licensor does not process payments and does not receive your payment details. Parents can require approval for purchases in the store.</p>
+  <p>The scope of free and paid features is defined in the application and may be changed in future versions. The application contains no advertising.</p>
+
+  <h3><span class="num">05</span>Educational use and approximate checks</h3>
+  <p>The application is a tool for learning the Arabic alphabet. The handwriting check in Calligraphy and in the Tests is <strong>approximate</strong>: it compares the shape you write with the shape of the letter from a font and may accept or reject writing that a teacher would judge differently. Letter names are spoken by your device’s text-to-speech engine, whose quality and accent depend on the device. Results shown in the application are informational; the application is not a certified teaching or assessment instrument and does not replace a teacher.</p>
+
+  <h3><span class="num">06</span>Children</h3>
+  <p>The application is designed for children aged about 4–8 together with an adult, and for adult beginners. Purchases, links leaving the application, sharing and access to system settings are placed behind a parental gate. Parents and guardians are responsible for supervising how children use their devices.</p>
+
+  <h3><span class="num">07</span>Data</h3>
+  <p>The application collects no personal data. Your name (if entered), settings and progress are stored locally on your device. Details are set out in the <a href="index.html">Privacy Policy</a>.</p>
+
+  <h3><span class="num">08</span>No warranty</h3>
+  <p>The application is provided “as is”, without warranty of any kind to the fullest extent permitted by applicable law. The Licensor does not warrant that the application will be error-free or uninterrupted.</p>
+
+  <h3><span class="num">09</span>Limitation of liability</h3>
+  <p>To the fullest extent permitted by applicable law, the Licensor shall not be liable for any indirect, incidental or consequential damages arising from the use of or inability to use the application.</p>
+  <p>Nothing in this Agreement excludes or limits liability that cannot be excluded or limited under mandatory provisions of law, including consumer protection law. Your statutory rights as a consumer are not affected.</p>
+
+  <h3><span class="num">10</span>Term and termination</h3>
+  <p>This licence applies for as long as you use the application. It terminates automatically if you breach its terms. Upon termination you must stop using the application and remove it from your devices. Sections on intellectual property, warranty and liability survive termination.</p>
+
+  <h3><span class="num">11</span>Changes</h3>
+  <p>The Licensor may update the application and these terms. Material changes will be reflected on this page with an updated “Valid from” date. Continued use after such changes constitutes acceptance of the updated terms.</p>
+
+  <h3><span class="num">12</span>Additional terms for the App Store (iOS)</h3>
+  <p>If you obtained the application from Apple’s App Store, the following also applies:</p>
+  <ul>
+    <li>This Agreement is concluded between you and the Licensor only, and not with Apple Inc. (“Apple”). The Licensor, not Apple, is solely responsible for the application and its content.</li>
+    <li>The licence is limited to use of the application on Apple-branded products that you own or control, as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions, except that the application may be accessed and used by other accounts associated with you via Family Sharing.</li>
+    <li>Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the application. Support is provided by the Licensor at the contact address below.</li>
+    <li>In the event of any failure of the application to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the application. To the maximum extent permitted by applicable law, Apple has no other warranty obligation whatsoever with respect to the application; any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty are the Licensor’s responsibility, to the extent not excluded by this Agreement.</li>
+    <li>The Licensor, not Apple, is responsible for addressing any claims by you or any third party relating to the application or your possession and use of it, including product liability claims, any claim that the application fails to conform to any applicable legal or regulatory requirement, and claims arising under consumer protection, privacy or similar legislation.</li>
+    <li>In the event of any third-party claim that the application or your possession and use of it infringes that third party’s intellectual property rights, the Licensor, not Apple, is solely responsible for the investigation, defence, settlement and discharge of any such claim.</li>
+    <li>You represent and warrant that you are not located in a country that is subject to a U.S. Government embargo or that has been designated by the U.S. Government as a “terrorist supporting” country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+    <li>You must comply with applicable third-party terms of agreement when using the application.</li>
+    <li>Apple and Apple’s subsidiaries are third-party beneficiaries of this Agreement, and upon your acceptance of it, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary.</li>
+  </ul>
+
+  <h3><span class="num">13</span>Additional terms for Google Play (Android)</h3>
+  <p>If you obtained the application from Google Play, the Google Play Terms of Service also apply to its download and to in-app purchases. Google is not a party to this Agreement and is not responsible for the application. Refunds for purchases are governed by Google Play’s refund policies.</p>
+
+  <h3><span class="num">14</span>Governing law</h3>
+  <p>This Agreement is governed by the law of the Republic of Poland. Mandatory consumer protection provisions of the country of your habitual residence remain unaffected.</p>
+
+  <h3><span class="num">15</span>Contact</h3>
+  <p>Questions about this Agreement and support: neuron.m31@gmail.com</p>
+</section>
+
+<!-- ══════════════════ POLSKI ══════════════════ -->
+<section class="lang" id="pl" lang="pl">
+  <h2>Umowa licencyjna użytkownika końcowego</h2>
+
+  <div class="core">
+    <p><strong>Aplikacja jest licencjonowana, a nie sprzedawana.</strong> Instalując ją lub używając jej, akceptujesz poniższe warunki. Jeśli ich nie akceptujesz — nie instaluj aplikacji i z niej nie korzystaj. Jeśli z aplikacji korzysta dziecko, warunki akceptuje rodzic lub opiekun prawny.</p>
+  </div>
+
+  <h3><span class="num">01</span>Udzielenie licencji</h3>
+  <p>Licencjodawca udziela Ci osobistej, niewyłącznej, nieprzenoszalnej i odwołalnej licencji na instalację i używanie aplikacji na urządzeniach, których jesteś właścicielem lub które kontrolujesz, do własnej nauki lub nauki Twojej rodziny.</p>
+  <p>Licencja nie przenosi własności aplikacji ani żadnej jej części. Wszelkie prawa nieudzielone wyraźnie w tej umowie pozostają przy Licencjodawcy.</p>
+
+  <h3><span class="num">02</span>Czego nie wolno robić</h3>
+  <ul>
+    <li>kopiować, rozpowszechniać, wynajmować, wypożyczać, sprzedawać ani udzielać dalszych licencji na aplikację,</li>
+    <li>modyfikować, adaptować, tłumaczyć ani tworzyć utworów zależnych,</li>
+    <li>dokonywać inżynierii wstecznej, dekompilacji ani dezasemblacji, ani próbować odtworzyć kodu źródłowego — poza zakresem, w jakim takie ograniczenie jest niedopuszczalne w świetle obowiązującego prawa,</li>
+    <li>usuwać ani zmieniać oznaczeń praw autorskich, znaków towarowych i innych informacji o prawach,</li>
+    <li>obchodzić, wyłączać ani zakłócać mechanizmów licencyjnych, kontroli dostępu, bramki rodzica lub płatności.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Własność intelektualna</h3>
+  <p>Aplikacja, jej kod źródłowy, projekt, grafika, teksty i wszystkie powiązane materiały są chronione prawem autorskim i pozostają wyłączną własnością Licencjodawcy. Struktura i kolejność lekcji, siatka liter, samouczek, sprawdziany i ich zadania oraz sposób sprawdzania pisma są własnością Autora i jakiekolwiek użycie ich w innych produktach bez zgody Autora jest zabronione.</p>
+  <p>Sam alfabet arabski jest częścią wspólnego dziedzictwa kulturowego i Licencjodawca nie rości sobie do niego praw. Litery są wyświetlane czcionkami i odczytywane syntezatorem mowy Twojego urządzenia, które należą do ich właścicieli.</p>
+  <p>Copyright © 2026 Andrzej Węgrzyn. Wszelkie prawa zastrzeżone.</p>
+
+  <h3><span class="num">04</span>Funkcje płatne i zakupy</h3>
+  <p>Aplikację można zainstalować za darmo. Pierwsze lekcje są otwarte dla wszystkich, a kolejne otwierają się, gdy uczeń zaliczy poprzednie. Premium — jednorazowy zakup przez Google Play lub App Store — otwiera od razu wszystkie lekcje; litera i tak zostaje oznaczona jako zaliczona dopiero wtedy, gdy uczeń ją zaliczy. Zakupy, anulowania i zwroty obsługuje sklep zgodnie ze swoimi warunkami; Licencjodawca nie przetwarza płatności i nie otrzymuje danych płatniczych. Rodzice mogą w sklepie włączyć zatwierdzanie zakupów.</p>
+  <p>Zakres funkcji darmowych i płatnych określa aplikacja i może on ulec zmianie w kolejnych wersjach. Aplikacja nie zawiera reklam.</p>
+
+  <h3><span class="num">05</span>Charakter edukacyjny i przybliżona ocena</h3>
+  <p>Aplikacja jest narzędziem do nauki alfabetu arabskiego. Sprawdzanie pisma w Kaligrafii i w Sprawdzianie jest <strong>przybliżone</strong>: porównuje napisany kształt z kształtem litery z czcionki i może zaliczyć lub odrzucić zapis, który nauczyciel oceniłby inaczej. Nazwy liter wymawia syntezator mowy urządzenia, którego jakość i akcent zależą od urządzenia. Wyniki pokazywane w aplikacji mają charakter informacyjny; aplikacja nie jest certyfikowanym narzędziem nauczania ani oceniania i nie zastępuje nauczyciela.</p>
+
+  <h3><span class="num">06</span>Dzieci</h3>
+  <p>Aplikacja jest przeznaczona dla dzieci w wieku około 4–8 lat korzystających z niej razem z dorosłym oraz dla dorosłych, którzy zaczynają naukę. Zakupy, linki wychodzące poza aplikację, udostępnianie i dostęp do ustawień systemu są chronione bramką rodzica. Za nadzór nad tym, jak dzieci korzystają z urządzeń, odpowiadają rodzice i opiekunowie.</p>
+
+  <h3><span class="num">07</span>Dane</h3>
+  <p>Aplikacja nie zbiera danych osobowych. Imię (jeśli zostało wpisane), ustawienia i postęp są zapisywane lokalnie na urządzeniu. Szczegóły opisuje <a href="index.html#pl">Polityka prywatności</a>.</p>
+
+  <h3><span class="num">08</span>Brak gwarancji</h3>
+  <p>Aplikacja jest udostępniana „w stanie, w jakim jest”, bez jakichkolwiek gwarancji w najszerszym zakresie dopuszczalnym przez obowiązujące prawo. Licencjodawca nie gwarantuje, że aplikacja będzie wolna od błędów ani że będzie działać bez przerw.</p>
+
+  <h3><span class="num">09</span>Ograniczenie odpowiedzialności</h3>
+  <p>W najszerszym zakresie dopuszczalnym przez obowiązujące prawo Licencjodawca nie ponosi odpowiedzialności za szkody pośrednie, przypadkowe ani wynikowe wynikające z używania aplikacji lub niemożności jej używania.</p>
+  <p>Żadne postanowienie tej umowy nie wyłącza ani nie ogranicza odpowiedzialności, której nie można wyłączyć ani ograniczyć na podstawie bezwzględnie obowiązujących przepisów, w tym przepisów o ochronie konsumentów. Twoje ustawowe prawa konsumenta pozostają nienaruszone.</p>
+
+  <h3><span class="num">10</span>Okres obowiązywania i rozwiązanie</h3>
+  <p>Licencja obowiązuje tak długo, jak używasz aplikacji. Wygasa automatycznie w razie naruszenia jej warunków. Po jej wygaśnięciu musisz przestać używać aplikacji i usunąć ją ze swoich urządzeń. Postanowienia dotyczące własności intelektualnej, gwarancji i odpowiedzialności obowiązują nadal.</p>
+
+  <h3><span class="num">11</span>Zmiany</h3>
+  <p>Licencjodawca może aktualizować aplikację i niniejsze warunki. Istotne zmiany zostaną opublikowane na tej stronie wraz ze zaktualizowaną datą „Valid from”. Dalsze korzystanie z aplikacji po takich zmianach oznacza akceptację zaktualizowanych warunków.</p>
+
+  <h3><span class="num">12</span>Dodatkowe warunki App Store (iOS)</h3>
+  <p>Jeśli aplikacja została pobrana z App Store firmy Apple, obowiązują również poniższe postanowienia:</p>
+  <ul>
+    <li>Niniejsza umowa jest zawarta wyłącznie między Tobą a Licencjodawcą, a nie z Apple Inc. („Apple”). Wyłączną odpowiedzialność za aplikację i jej treść ponosi Licencjodawca, nie Apple.</li>
+    <li>Licencja jest ograniczona do używania aplikacji na produktach marki Apple, których jesteś właścicielem lub które kontrolujesz, zgodnie z Zasadami użytkowania określonymi w Warunkach korzystania z usług multimedialnych Apple (Apple Media Services Terms and Conditions), z tym że z aplikacji mogą korzystać inne konta powiązane z Tobą w ramach Chmury rodzinnej.</li>
+    <li>Apple nie ma żadnego obowiązku świadczenia usług konserwacji ani wsparcia w odniesieniu do aplikacji. Wsparcia udziela Licencjodawca pod adresem kontaktowym podanym niżej.</li>
+    <li>Jeśli aplikacja nie spełnia mającej zastosowanie gwarancji, możesz powiadomić Apple, a Apple zwróci cenę zakupu aplikacji (jeśli była płatna). W najszerszym zakresie dopuszczalnym przez prawo Apple nie ma żadnych innych zobowiązań gwarancyjnych w odniesieniu do aplikacji; wszelkie inne roszczenia, straty, zobowiązania, szkody, koszty lub wydatki wynikające z niespełnienia gwarancji obciążają Licencjodawcę, w zakresie niewyłączonym niniejszą umową.</li>
+    <li>Za rozpatrywanie wszelkich roszczeń Twoich lub osób trzecich dotyczących aplikacji albo jej posiadania i używania — w tym roszczeń z tytułu odpowiedzialności za produkt, roszczeń, że aplikacja nie spełnia wymogów prawnych lub regulacyjnych, oraz roszczeń wynikających z przepisów o ochronie konsumentów, prywatności lub podobnych — odpowiada Licencjodawca, nie Apple.</li>
+    <li>W razie roszczenia osoby trzeciej, że aplikacja albo jej posiadanie i używanie narusza prawa własności intelektualnej tej osoby, wyłączną odpowiedzialność za zbadanie, obronę, ugodę i zaspokojenie takiego roszczenia ponosi Licencjodawca, nie Apple.</li>
+    <li>Oświadczasz i zapewniasz, że nie przebywasz w kraju objętym embargiem rządu USA ani w kraju uznanym przez rząd USA za „wspierający terroryzm” oraz że nie figurujesz na żadnej liście podmiotów zakazanych lub objętych ograniczeniami prowadzonej przez rząd USA.</li>
+    <li>Korzystając z aplikacji, musisz przestrzegać obowiązujących warunków umów z podmiotami trzecimi.</li>
+    <li>Apple i jego spółki zależne są beneficjentami tej umowy jako osoby trzecie; z chwilą jej akceptacji przez Ciebie Apple uzyskuje prawo (i uważa się, że je przyjął) do egzekwowania tej umowy wobec Ciebie jako beneficjent będący osobą trzecią.</li>
+  </ul>
+
+  <h3><span class="num">13</span>Dodatkowe warunki Google Play (Android)</h3>
+  <p>Jeśli aplikacja została pobrana z Google Play, do jej pobrania i zakupów w aplikacji mają zastosowanie również Warunki korzystania z usługi Google Play. Google nie jest stroną tej umowy i nie odpowiada za aplikację. Zwroty za zakupy podlegają zasadom zwrotów Google Play.</p>
+
+  <h3><span class="num">14</span>Prawo właściwe</h3>
+  <p>Umowa podlega prawu Rzeczypospolitej Polskiej. Bezwzględnie obowiązujące przepisy o ochronie konsumentów kraju Twojego zwykłego pobytu pozostają nienaruszone.</p>
+
+  <h3><span class="num">15</span>Kontakt</h3>
+  <p>Pytania dotyczące umowy i wsparcie: neuron.m31@gmail.com</p>
+</section>
+
+<!-- ══════════════════ العربية ══════════════════ -->
+<section class="lang" id="ar" lang="ar" dir="rtl">
+  <h2>اتفاقية ترخيص المستخدم النهائي</h2>
+
+  <div class="core">
+    <p><strong>هذا التطبيق مرخَّص لك ولا يُباع.</strong> بتثبيت التطبيق أو استخدامه فإنك توافق على الشروط الواردة أدناه. إذا كنت لا توافق عليها، فلا تثبّت التطبيق ولا تستخدمه. وإذا كان المستخدم طفلًا، فإن الوالد أو الوصي القانوني هو من يوافق على هذه الشروط.</p>
+  </div>
+
+  <h3><span class="num">01</span>منح الترخيص</h3>
+  <p>يمنحك المرخِّص ترخيصًا شخصيًا وغير حصري وغير قابل للتحويل وقابلًا للإلغاء لتثبيت التطبيق واستخدامه على الأجهزة التي تملكها أو تتحكم فيها، لأغراض التعلّم الخاصة بك أو بعائلتك.</p>
+  <p>لا ينقل هذا الترخيص ملكية التطبيق أو أي جزء منه. وتبقى جميع الحقوق غير الممنوحة صراحةً في هذه الاتفاقية للمرخِّص.</p>
+
+  <h3><span class="num">02</span>ما لا يجوز لك فعله</h3>
+  <ul>
+    <li>نسخ التطبيق أو توزيعه أو تأجيره أو إعارته أو بيعه أو منح تراخيص فرعية له،</li>
+    <li>تعديله أو تكييفه أو ترجمته أو إنشاء أعمال مشتقة منه،</li>
+    <li>إجراء الهندسة العكسية له أو فك تجميعه أو محاولة استخراج شفرته المصدرية، إلا في الحدود التي يحظر فيها القانون المعمول به مثل هذا القيد،</li>
+    <li>إزالة أو تغيير أي إشعارات تتعلق بحقوق النشر أو العلامات التجارية أو الملكية،</li>
+    <li>التحايل على آليات الترخيص أو التحكم في الوصول أو بوابة الوالدين أو الدفع في التطبيق، أو تعطيلها أو التدخل فيها.</li>
+  </ul>
+
+  <h3><span class="num">03</span>الملكية الفكرية</h3>
+  <p>التطبيق وشفرته المصدرية وتصميمه ورسوماته ونصوصه وجميع المواد المرتبطة به محمية بموجب حقوق النشر، وتبقى ملكية حصرية للمرخِّص. كما أن بنية الدروس وتسلسلها وشبكة الحروف والدرس التعليمي والاختبارات ومهامها وطريقة تقييم الكتابة ملك للمؤلف، ويُحظر استخدامها في منتجات أخرى دون موافقته.</p>
+  <p>الأبجدية العربية نفسها جزء من التراث الثقافي المشترك، ولا يدّعي المرخِّص أي حق فيها. تُعرض الحروف بخطوط جهازك وتُنطق بمحرّك تحويل النص إلى كلام في جهازك، وهي ملك لأصحابها.</p>
+  <p dir="ltr" style="text-align:right">Copyright © 2026 Andrzej Węgrzyn. All rights reserved.</p>
+
+  <h3><span class="num">04</span>الميزات المدفوعة والمشتريات</h3>
+  <p>تثبيت التطبيق مجاني. الدروس الأولى متاحة للجميع، وتُفتح الدروس التالية عندما يجتاز المتعلّم الدروس السابقة. أما Premium — وهو شراء لمرة واحدة عبر Google Play أو App Store — فيفتح جميع الدروس فورًا؛ ومع ذلك لا يُعلَّم الحرف كمُجتاز إلا عندما يجتازه المتعلّم بنفسه. يتولّى المتجر عمليات الشراء والإلغاء والاسترداد وفق شروطه الخاصة؛ ولا يعالج المرخِّص المدفوعات ولا يتلقّى بيانات الدفع الخاصة بك. ويمكن للوالدين اشتراط الموافقة على المشتريات من إعدادات المتجر.</p>
+  <p>يحدّد التطبيق نطاق الميزات المجانية والمدفوعة، وقد يتغيّر في الإصدارات القادمة. لا يحتوي التطبيق على إعلانات.</p>
+
+  <h3><span class="num">05</span>الطابع التعليمي والتقييم التقريبي</h3>
+  <p>التطبيق أداة لتعلّم الحروف العربية. تقييم الكتابة في قسمي الخط والاختبار <strong>تقريبي</strong>: فهو يقارن الشكل الذي تكتبه بشكل الحرف في الخط، وقد يقبل أو يرفض كتابةً كان المعلّم سيقيّمها بشكل مختلف. يَنطق أسماءَ الحروف محرّكُ تحويل النص إلى كلام في جهازك، وتعتمد جودته ولهجته على الجهاز. النتائج المعروضة في التطبيق للمعلومات فقط؛ والتطبيق ليس أداة معتمدة للتعليم أو التقييم ولا يُغني عن المعلّم.</p>
+
+  <h3><span class="num">06</span>الأطفال</h3>
+  <p>صُمّم التطبيق للأطفال من عمر 4 إلى 8 سنوات تقريبًا بصحبة شخص بالغ، وللكبار المبتدئين. المشتريات والروابط التي تغادر التطبيق والمشاركة والوصول إلى إعدادات النظام محمية ببوابة للوالدين. ويتحمّل الوالدان والأوصياء مسؤولية الإشراف على استخدام الأطفال للأجهزة.</p>
+
+  <h3><span class="num">07</span>البيانات</h3>
+  <p>لا يجمع التطبيق أي بيانات شخصية. يُحفظ الاسم (إن أُدخل) والإعدادات والتقدّم محليًا على جهازك. التفاصيل في <a href="index.html#ar">سياسة الخصوصية</a>.</p>
+
+  <h3><span class="num">08</span>إخلاء الضمان</h3>
+  <p>يُقدَّم التطبيق «كما هو» دون أي ضمان من أي نوع، إلى أقصى حدّ يسمح به القانون المعمول به. ولا يضمن المرخِّص خلوّ التطبيق من الأخطاء أو عمله دون انقطاع.</p>
+
+  <h3><span class="num">09</span>تحديد المسؤولية</h3>
+  <p>إلى أقصى حدّ يسمح به القانون المعمول به، لا يتحمّل المرخِّص المسؤولية عن أي أضرار غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام التطبيق أو تعذّر استخدامه.</p>
+  <p>لا يستبعد أي بند في هذه الاتفاقية أو يحدّ من مسؤولية لا يجوز استبعادها أو تحديدها بموجب أحكام القانون الإلزامية، بما في ذلك قوانين حماية المستهلك. ولا تتأثر حقوقك القانونية كمستهلك.</p>
+
+  <h3><span class="num">10</span>المدة والإنهاء</h3>
+  <p>يسري هذا الترخيص طوال مدة استخدامك للتطبيق، وينتهي تلقائيًا إذا خالفت شروطه. عند انتهائه يجب عليك التوقّف عن استخدام التطبيق وحذفه من أجهزتك. وتبقى البنود المتعلقة بالملكية الفكرية والضمان والمسؤولية سارية بعد الإنهاء.</p>
+
+  <h3><span class="num">11</span>التغييرات</h3>
+  <p>يجوز للمرخِّص تحديث التطبيق وهذه الشروط. وستُنشر التغييرات الجوهرية على هذه الصفحة مع تحديث تاريخ «Valid from». ويُعدّ استمرارك في الاستخدام بعد هذه التغييرات قبولًا للشروط المحدّثة.</p>
+
+  <h3><span class="num">12</span>شروط إضافية لمتجر App Store ‏(iOS)</h3>
+  <p>إذا حصلت على التطبيق من متجر App Store التابع لشركة Apple، فإن ما يلي ينطبق أيضًا:</p>
+  <ul>
+    <li>تُبرم هذه الاتفاقية بينك وبين المرخِّص فقط، وليس مع شركة Apple Inc. (‏«Apple»). المرخِّص، وليس Apple، هو المسؤول الوحيد عن التطبيق ومحتواه.</li>
+    <li>يقتصر الترخيص على استخدام التطبيق على منتجات Apple التي تملكها أو تتحكم فيها، وفق قواعد الاستخدام الواردة في شروط وأحكام خدمات Apple الإعلامية (Apple Media Services Terms and Conditions)، مع جواز وصول الحسابات الأخرى المرتبطة بك واستخدامها للتطبيق عبر ميزة المشاركة العائلية.</li>
+    <li>لا تتحمّل Apple أي التزام على الإطلاق بتقديم خدمات صيانة أو دعم للتطبيق. ويقدّم المرخِّص الدعم على عنوان الاتصال أدناه.</li>
+    <li>في حال عدم مطابقة التطبيق لأي ضمان معمول به، يمكنك إخطار Apple، وستردّ Apple سعر شراء التطبيق (إن وُجد). وإلى أقصى حدّ يسمح به القانون المعمول به، لا يقع على Apple أي التزام آخر بالضمان فيما يتعلق بالتطبيق؛ وتقع أي مطالبات أو خسائر أو التزامات أو أضرار أو تكاليف أو نفقات أخرى ناتجة عن عدم المطابقة لأي ضمان على عاتق المرخِّص، في الحدود التي لا تستبعدها هذه الاتفاقية.</li>
+    <li>المرخِّص، وليس Apple، هو المسؤول عن معالجة أي مطالبات منك أو من أي طرف ثالث تتعلق بالتطبيق أو بحيازتك له واستخدامك إياه، بما في ذلك مطالبات المسؤولية عن المنتج، وأي ادعاء بعدم مطابقة التطبيق لأي متطلبات قانونية أو تنظيمية، والمطالبات الناشئة بموجب قوانين حماية المستهلك أو الخصوصية أو ما شابهها.</li>
+    <li>في حال ادّعى طرف ثالث أن التطبيق أو حيازتك له واستخدامك إياه ينتهك حقوق الملكية الفكرية لذلك الطرف، يكون المرخِّص، وليس Apple، المسؤول الوحيد عن التحقيق في هذا الادعاء والدفاع عنه وتسويته والوفاء به.</li>
+    <li>تُقرّ وتضمن أنك لا تقيم في بلد يخضع لحظر من حكومة الولايات المتحدة أو صنّفته حكومة الولايات المتحدة بلدًا «داعمًا للإرهاب»، وأنك غير مدرج في أي قائمة لحكومة الولايات المتحدة للأطراف المحظورة أو المقيّدة.</li>
+    <li>يجب عليك الالتزام بشروط اتفاقيات الأطراف الثالثة المعمول بها عند استخدام التطبيق.</li>
+    <li>تُعدّ Apple والشركات التابعة لها مستفيدين من هذه الاتفاقية بصفتهم أطرافًا ثالثة، وعند قبولك لها يحقّ لـ Apple (ويُعدّ أنها قبلت هذا الحق) إنفاذ هذه الاتفاقية تجاهك بصفتها طرفًا ثالثًا مستفيدًا.</li>
+  </ul>
+
+  <h3><span class="num">13</span>شروط إضافية لمتجر Google Play ‏(أندرويد)</h3>
+  <p>إذا حصلت على التطبيق من Google Play، فإن شروط خدمة Google Play تنطبق أيضًا على تنزيله وعلى المشتريات داخله. Google ليست طرفًا في هذه الاتفاقية وليست مسؤولة عن التطبيق. وتخضع عمليات استرداد المشتريات لسياسات الاسترداد في Google Play.</p>
+
+  <h3><span class="num">14</span>القانون الواجب التطبيق</h3>
+  <p>تخضع هذه الاتفاقية لقانون جمهورية بولندا. ولا تتأثر الأحكام الإلزامية لحماية المستهلك في بلد إقامتك المعتادة.</p>
+
+  <h3><span class="num">15</span>الاتصال</h3>
+  <p>للأسئلة المتعلقة بهذه الاتفاقية وللدعم: <span dir="ltr">neuron.m31@gmail.com</span></p>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <p>Neuron M31 · M31 Edu Arabic Alphabet · <code>ch.m31.edu.arabic</code></p>
+  <p><a href="index.html">Privacy Policy · Polityka prywatności · <span lang="ar" dir="rtl">سياسة الخصوصية</span></a></p>
+</footer>
+
+</body>
+</html>
